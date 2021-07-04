@@ -7,8 +7,6 @@ const path     = require('path');
 
 const Sockets  = require('./sockets');
 
-const PreguntaList = require("./pregunta-list")
-
 class Server {
 
     constructor() {
@@ -37,7 +35,6 @@ class Server {
     // depende mucho de lo que necesites
     configurarSockets() {
         new Sockets( this.io );
-
     }
 
     execute() {
@@ -52,7 +49,6 @@ class Server {
         this.server.listen( this.port, () => {
             console.log('Server corriendo en puerto:', this.port );
         });
-
     }
 
 }
