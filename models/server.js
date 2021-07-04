@@ -1,8 +1,8 @@
 // Servidor de Express
 const express  = require('express');
-const http     = require('http');
+const http = require('http');
 const socketio = require('socket.io');
-const path     = require('path');
+const path = require('path');
 //const cors     = require('cors');
 
 const Sockets  = require('./sockets');
